@@ -1,5 +1,5 @@
 import React from 'react'
-import imgAbout from '../../Images/profile.JPG'
+import imgAbout from '../../Assets/Images/img2.JPG'
 import './About.css'
 
 const About = () => {
@@ -7,7 +7,7 @@ const About = () => {
         <section className='about'>
             <div className='container flex'>
                 <div className='aboutImgDiv'>
-                    <img src={imgAbout} alt="" />
+                    <img src={imgAbout} alt="aboutImg" />
                 </div>
 
                 <div className='aboutWords'>

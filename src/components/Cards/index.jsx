@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { HiOutlineLocationMarker, HiOutlineClipboardCheck } from 'react-icons/hi';
-import img from '../../Images/City/Qax/1.jpg'
-import img2 from '../../Images/City/Seki/2.jpg'
-import img3 from '../../Images/City/Zaqatala/1.jpg'
-import img4 from '../../Images/City/Qusar/1.jpg'
-import img5 from '../../Images/City/Quba/4.jpg'
-import img6 from '../../Images/City/Ismayilli/5.jpeg'
-import img7 from '../../Images/City/Qebele/1.jpg'
-import img8 from '../../Images/City/Lenkeran/1.jpg'
-import img9 from '../../Images/City/Lerik/1.jpg'
+import img from '../../Assets/Images/City/Qax/1.jpg'
+import img2 from '../../Assets/Images/City/Seki/2.jpg'
+import img3 from '../../Assets/Images/City/Zaqatala/1.jpg'
+import img4 from '../../Assets/Images/City/Qusar/1.jpg'
+import img5 from '../../Assets/Images/City/Quba/4.jpg'
+import img6 from '../../Assets/Images/City/Ismayilli/5.jpeg'
+import img7 from '../../Assets/Images/City/Qebele/1.jpg'
+import img8 from '../../Assets/Images/City/Lenkeran/1.jpg'
+import img9 from '../../Assets/Images/City/Lerik/1.jpg'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './Cards.css';

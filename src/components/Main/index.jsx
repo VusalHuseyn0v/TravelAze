@@ -18,7 +18,7 @@ const Main = () => {
     return (
         <section className='main'>
             <div className='overlay'></div>
-            {/* <video muted loop autoPlay src="https://videos.pexels.com/video-files/30741486/13150303_640_360_60fps.mp4"></video> */}
+            <video muted autoPlay loop src="https://videos.pexels.com/video-files/5948574/5948574-uhd_2560_1440_30fps.mp4"></video>
             <div className='mainContent container'>
                 <div className='textDiv'>
                     <span className='smallText '>

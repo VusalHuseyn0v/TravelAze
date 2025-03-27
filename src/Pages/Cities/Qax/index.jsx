@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import img1 from '../../../Images/City/Qax/1.jpg'
-import img2 from '../../../Images/City/Qax/2.jpg'
-import img3 from '../../../Images/City/Qax/3.jpg'
-import img4 from '../../../Images/City/Qax/4.jpg'
-import img5 from '../../../Images/City/Qax/5.jpg'
+import img1 from '../../../Assets/Images/City/Qax/1.jpg'
+import img2 from '../../../Assets/Images/City/Qax/2.jpg'
+import img3 from '../../../Assets/Images/City/Qax/3.jpg'
+import img4 from '../../../Assets/Images/City/Qax/4.jpg'
+import img5 from '../../../Assets/Images/City/Qax/5.jpg'
 import Footer from "../../../components/Footer";
 import Aos from 'aos';
 import 'aos/dist/aos.css'

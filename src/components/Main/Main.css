@@ -33,8 +33,6 @@ body.dark .main .cardDiv label {
   justify-content: center;
   margin: auto;
   color: var(--whiteColor);
-  background-image: url("https://images.pexels.com/photos/2049422/pexels-photo-2049422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  background-size: cover;
 }
 .main .overlay {
   position: absolute;

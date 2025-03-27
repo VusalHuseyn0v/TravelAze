@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import img1 from '../../../Images/City/Ismayilli/1.jpg'
-import img2 from '../../../Images/City/Ismayilli/2.jpg'
-import img3 from '../../../Images/City/Ismayilli/3.jpg'
-import img4 from '../../../Images/City/Ismayilli/4.jpg'
-import img5 from '../../../Images/City/Ismayilli/5.jpeg'
-import Footer from "../../../components/Footer";
+import img1 from '../../../Assets/Images/City/Ismayilli/1.jpg'
+import img2 from '../../../Assets/Images/City/Ismayilli/2.jpg'
+import img3 from '../../../Assets/Images/City/Ismayilli/3.jpg'
+import img4 from '../../../Assets/Images/City/Ismayilli/4.jpg'
+import img5 from '../../../Assets/Images/City/Ismayilli/5.jpeg'
+import Footer from '../../../components/Footer'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 

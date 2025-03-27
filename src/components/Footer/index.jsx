@@ -17,8 +17,8 @@ const Footer = () => {
   return (
     <section className='footer'>
       <div className="videoDiv">
-        {/* <video muted loop autoPlay src="https://videos.pexels.com/video-files/30886581/13206566_640_360_30fps.mp4"></video> */}
-        </div>
+        <video muted loop autoPlay src="https://videos.pexels.com/video-files/19216559/19216559-uhd_2560_1440_30fps.mp4"></video>
+      </div>
       <div className='secContent container'>
         <div className="footerCard flex">
           <div className='footerIntro flex'>
