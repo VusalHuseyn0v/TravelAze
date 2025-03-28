@@ -1,19 +1,47 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { GrLocation } from "react-icons/gr";
-import { HiFilter } from 'react-icons/hi';
+import { HiSearch } from 'react-icons/hi';
 import { IoLogoFacebook } from "react-icons/io5";
 import { AiOutlineInstagram } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import './Main.css'
 
 const Main = () => {
+    const navigate = useNavigate();
+    const [cityId, setCityId] = useState('');
+    const [checkInDate, setCheckInDate] = useState('');
+    const [checkOutDate, setCheckOutDate] = useState('');
+
+    const cities = [
+        { id: 1, name: 'Qax' },
+        { id: 2, name: 'Seki' },
+        { id: 3, name: 'Zaqatala' },
+        { id: 4, name: 'Qusar' },
+        { id: 5, name: 'Quba' },
+        { id: 6, name: 'Ismayilli' },
+        { id: 7, name: 'Qebele' },
+        { id: 8, name: 'Lenkeran' },
+        { id: 9, name: 'Lerik' }
+    ];
 
     useEffect(() => {
         Aos.init({ duration: 1000 })
     }, [])
 
+    const handleSearch = () => {
+        if (cityId) {
+            navigate(`/destination/${cityId}`, {
+                state: {
+                    checkInDate,
+                    checkOutDate
+                }
+            });
+        } else {
+            alert('Please select a destination');
+        }
+    }
 
     return (
         <section className='main'>
@@ -21,58 +49,80 @@ const Main = () => {
             <video muted autoPlay loop src="https://videos.pexels.com/video-files/5948574/5948574-uhd_2560_1440_30fps.mp4"></video>
             <div className='mainContent container'>
                 <div className='textDiv'>
-                    <span className='smallText '>
+                    <span className='smallText'>
                         Our Packages
                     </span>
-                    <h1 data-aos="fade-up"
-                        className='mainTitle'>
+                    <h1 data-aos="fade-up" className='mainTitle'>
                         Search your Holiday
                     </h1>
                 </div>
 
-                <div data-aos="fade-up"
-                    className='cardDiv grid'>
+                <div data-aos="fade-up" className='cardDiv grid'>
                     <div className='destinationInput'>
                         <label htmlFor="city">
                             Search Your destination:</label>
                         <div className='input flex'>
-                            <input type="text"
-                                placeholder='Enter name here....' />
+                            <select
+                                value={cityId}
+                                onChange={(e) => setCityId(e.target.value)}
+
+                            >
+                                <option value="">Select a city</option>
+                                {cities.map(city => (
+                                    <option key={city.id} value={city.id}>
+                                        {city.name}
+                                    </option>
+                                ))}
+                            </select>
                             <GrLocation className='icon' />
                         </div>
                     </div>
                     <div className='destinationInput'>
-                        <label htmlFor="city">
+                        <label htmlFor="checkIn">
                             Check-in date
                         </label>
                         <div className='input flex'>
-                            <input type="date" />
+                            <input
+                                type="date"
+                                id="checkIn"
+                                value={checkInDate}
+                                onChange={(e) => setCheckInDate(e.target.value)}
+                            />
                         </div>
                     </div>
                     <div className='destinationInput'>
-                        <label htmlFor="city">
-                            Check-out date</label>
+                        <label htmlFor="checkOut">
+                            Check-out date
+                        </label>
                         <div className='input flex'>
-                            <input type="date" />
+                            <input
+                                type="date"
+                                id="checkOut"
+                                value={checkOutDate}
+                                onChange={(e) => setCheckOutDate(e.target.value)}
+                                min={checkInDate}
+                            />
                         </div>
                     </div>
-                    <div className='searchOptions flex'>
-                        <HiFilter className='icon' />
-                        <span>MORE FILTERS</span>
+                    <div className='searchOptions flex' onClick={handleSearch}>
+                        <HiSearch className='icon' />
+                        <span>SEARCH</span>
                     </div>
-
                 </div>
-                <div data-aos="fade-up"
-                    className='mainFooterIcons flex'>
+                <div data-aos="fade-up" className='mainFooterIcons flex'>
                     <div className='rightIcons'>
-                        <Link to="https://www.facebook.com" target='_blank' rel="noopener noreferrer"><IoLogoFacebook className='icon' /></Link>
+                        <Link to="https://www.facebook.com" target='_blank' rel="noopener noreferrer">
+                            <IoLogoFacebook className='icon' />
+                        </Link>
                     </div>
                     <div className='leftIcons'>
-                        <Link to="https://www.instagram.com" target='_blank' rel="noopener noreferrer"><AiOutlineInstagram className='icon' /></Link>
+                        <Link to="https://www.instagram.com" target='_blank' rel="noopener noreferrer">
+                            <AiOutlineInstagram className='icon' />
+                        </Link>
                     </div>
                 </div>
             </div>
-        </section >
+        </section>
     )
 }
 

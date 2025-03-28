@@ -28,7 +28,7 @@ body.dark {
                 .footerList {
                     color: var(--whiteColor);
 
-                    a:visited {
+                    a {
                         color: var(--whiteColor);
 
                         &:hover {
@@ -191,8 +191,8 @@ body.dark {
                     color: var(--textColor);
                     transition: .3s ease-in-out;
 
-                    a{
-                        color:var(--textColor);
+                    a {
+                        color: var(--textColor);
                     }
 
                     a:hover {

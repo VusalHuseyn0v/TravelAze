@@ -21,6 +21,10 @@ body.dark .main .cardDiv {
   background: var(--blackColor);
   color: var(--whiteColor);
 }
+body.dark .main .cardDiv option {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+}
 body.dark .main .cardDiv label {
   color: var(--whiteColor);
 }
@@ -105,6 +109,11 @@ body.dark .main .cardDiv label {
   padding: 0 1rem;
   background: var(--inputColor);
   border-radius: 3rem;
+}
+.main .mainContent .cardDiv .input select {
+  width: 100%;
+  border: none;
+  background: var(--inputColor);
 }
 .main .mainContent .cardDiv .input input {
   background: none;

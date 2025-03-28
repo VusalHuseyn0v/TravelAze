@@ -25,12 +25,12 @@ body.dark .footer .footerCard .footerLinks .groupTitle,
 body.dark .footer .footerCard .footerLinks .footerList {
   color: var(--whiteColor);
 }
-body.dark .footer .footerCard .footerLinks .groupTitle a:visited,
-body.dark .footer .footerCard .footerLinks .footerList a:visited {
+body.dark .footer .footerCard .footerLinks .groupTitle a,
+body.dark .footer .footerCard .footerLinks .footerList a {
   color: var(--whiteColor);
 }
-body.dark .footer .footerCard .footerLinks .groupTitle a:visited:hover,
-body.dark .footer .footerCard .footerLinks .footerList a:visited:hover {
+body.dark .footer .footerCard .footerLinks .groupTitle a:hover,
+body.dark .footer .footerCard .footerLinks .footerList a:hover {
   color: var(--PrimaryColor);
 }
 body.dark .footer .footerCard .footerLinks .groupTitle .icon,

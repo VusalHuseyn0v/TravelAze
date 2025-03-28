@@ -22,6 +22,12 @@ body.dark {
             background: var(--blackColor);
             color: var(--whiteColor);
 
+            option {
+                background: var(--blackColor);
+                color: var(--whiteColor);
+
+            }
+
             label {
                 color: var(--whiteColor);
             }
@@ -117,6 +123,12 @@ body.dark {
                 padding: 0 1rem;
                 background: var(--inputColor);
                 border-radius: 3rem;
+
+                select {
+                    width: 100%;
+                    border: none;
+                    background: var(--inputColor);
+                }
 
                 input {
                     background: none;
