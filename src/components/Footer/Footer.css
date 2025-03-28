@@ -154,7 +154,7 @@ body.dark .footer .footerCard .footerIntro .logoDiv .icon {
   color: var(--textColor);
   transition: 0.3s ease-in-out;
 }
-.footer .footerCard .footerLinks .linkGroup .footerList a:visited {
+.footer .footerCard .footerLinks .linkGroup .footerList a {
   color: var(--textColor);
 }
 .footer .footerCard .footerLinks .linkGroup .footerList a:hover {

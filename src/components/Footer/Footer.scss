@@ -191,8 +191,8 @@ body.dark {
                     color: var(--textColor);
                     transition: .3s ease-in-out;
 
-                    a:visited {
-                        color: var(--textColor);
+                    a{
+                        color:var(--textColor);
                     }
 
                     a:hover {
