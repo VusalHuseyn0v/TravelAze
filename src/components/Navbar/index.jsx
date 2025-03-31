@@ -18,7 +18,6 @@ const Navbar = ({ scrollToTop }) => {
     };
 
     useEffect(() => {
-
         document.body.className = theme;
 
         const navbar = document.querySelector('.navBarSection');
@@ -48,14 +47,38 @@ const Navbar = ({ scrollToTop }) => {
                 <div className={active}>
                     <ul className='navLists flex'>
                         <li className='navItem'>
-                            <NavLink className='navLink' to="/" onClick={scrollToTop}>Home</NavLink>
+                            <NavLink
+                                className='navLink'
+                                to="/"
+                                onClick={() => {
+                                    scrollToTop();
+                                    removeNavbar();
+                                }}>
+                                Home
+                            </NavLink>
                         </li>
 
                         <li className='navItem'>
-                            <NavLink className='navLink' to="/about">About</NavLink>
+                            <NavLink
+                                className='navLink'
+                                to="/about"
+                                onClick={() => {
+                                    scrollToTop();
+                                    removeNavbar();
+                                }}>
+                                About
+                            </NavLink>
                         </li>
                         <li className='navItem'>
-                            <NavLink className='navLink' to="/contact">Contact</NavLink>
+                            <NavLink
+                                className='navLink'
+                                to="/contact"
+                                onClick={() => {
+                                    scrollToTop();
+                                    removeNavbar();
+                                }}>
+                                Contact
+                            </NavLink>
                         </li>
                         <li className='navItem'>
                             <button onClick={toggleTheme} className="theme-toggle-btn">
