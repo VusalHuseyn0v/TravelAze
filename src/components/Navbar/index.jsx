@@ -19,28 +19,37 @@ const Navbar = ({ scrollToTop }) => {
 
     useEffect(() => {
         document.body.className = theme;
-
         const navbar = document.querySelector('.navBarSection');
         if (navbar) {
             navbar.className = `navBarSection ${theme}`;
         }
     }, [theme]);
 
+
     const showNav = () => {
         setActive('navBar activeNavbar');
-    }
+    };
+
 
     const removeNavbar = () => {
         setActive('navBar');
-    }
+    };
 
     return (
         <section className={`navBarSection ${theme}`}>
 
             <header className={`header flex ${theme}`}>
                 <div className='logoDiv'>
-                    <Link to="/" onClick={scrollToTop} className='logo flex'>
-                        <h1> <MdOutlineTravelExplore className="icon" />TravelAZE</h1>
+                    <Link to="/"
+                        onClick={() => {
+                            scrollToTop();
+                            removeNavbar();
+                        }}
+                        className='logo flex'>
+                        <h1> <MdOutlineTravelExplore
+                            className="icon" />
+                            TravelAZE
+                        </h1>
                     </Link>
                 </div>
 
@@ -57,15 +66,12 @@ const Navbar = ({ scrollToTop }) => {
                                 Home
                             </NavLink>
                         </li>
-
                         <li className='navItem'>
                             <NavLink
                                 className='navLink'
                                 to="/about"
-                                onClick={() => {
-                                    scrollToTop();
-                                    removeNavbar();
-                                }}>
+                                onClick={() =>
+                                    removeNavbar()}>
                                 About
                             </NavLink>
                         </li>
@@ -73,26 +79,31 @@ const Navbar = ({ scrollToTop }) => {
                             <NavLink
                                 className='navLink'
                                 to="/contact"
-                                onClick={() => {
-                                    scrollToTop();
-                                    removeNavbar();
-                                }}>
+                                onClick={() =>
+                                    removeNavbar()}>
                                 Contact
                             </NavLink>
                         </li>
                         <li className='navItem'>
-                            <button onClick={toggleTheme} className="theme-toggle-btn">
+                            <button onClick={() => {
+                                toggleTheme();
+                                removeNavbar();
+                            }}
+                                className="theme-toggle-btn">
                                 {theme === 'light' ? <MdDarkMode /> : <MdOutlineLightMode />}
                             </button>
                         </li>
                     </ul>
 
-                    <div onClick={removeNavbar} className='closeNavbar'>
-                        <IoIosCloseCircle className='icon' />
+                    <div onClick={removeNavbar}
+                        className='closeNavbar'>
+                        <IoIosCloseCircle
+                            className='icon' />
                     </div>
                 </div>
 
-                <div onClick={showNav} className="toggleNavbar">
+                <div onClick={showNav}
+                    className="toggleNavbar">
                     <TbGridDots className='icon' />
                 </div>
             </header>
