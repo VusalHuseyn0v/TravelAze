@@ -21,6 +21,8 @@
   background-image: url("../../Assets/Images/contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  top: 85px;
 }
 .contact form {
   width: 800px;
@@ -87,4 +89,4 @@
 }
 .contact form .input-box .field::placeholder {
   color: var(--whiteColor);
-}
+}/*# sourceMappingURL=Contact.css.map */

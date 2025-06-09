@@ -21,6 +21,8 @@
   color: var(--whiteColor);
   padding: 1rem 0rem;
   height: 100%;
+  position: relative;
+  top: 80px;
 }
 .about .container {
   align-items: center;
@@ -85,4 +87,4 @@
     font-size: 14px;
     width: 80vw;
   }
-}
+}/*# sourceMappingURL=About.css.map */

@@ -31,10 +31,20 @@ body.dark .noPage h2 {
   height: 100vh;
 }
 .noPage .container h1 {
-  font-size: 130px;
+  font-size: 100px;
   color: red;
 }
 .noPage .container h2 {
   color: var(--blackColor);
   font-size: 30px;
 }
+
+@media screen and (max-width: 300px) {
+  h2 {
+    color: var(--blackColor);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}/*# sourceMappingURL=NoPage.css.map */

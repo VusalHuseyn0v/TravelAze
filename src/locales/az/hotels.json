@@ -1,0 +1,10 @@
+{
+  "search": {
+    "title": "Axtarış",
+    "hotelNameLabel": "Otel adı",
+    "minPriceLabel": "Min qiymət (AZN)",
+    "maxPriceLabel": "Maksimum qiymət (AZN)",
+    "noResults": "Uyğun otel tapılmadı.",
+    "ratingText": "Reytinq"
+  }
+}

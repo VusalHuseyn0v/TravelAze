@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --PrimaryColor: hsl(199, 100%, 33%);
   --SecondaryColor: hsl(187, 85%, 43%);
@@ -13,22 +14,6 @@
   --cardBG: rgb(235, 235, 235);
 }
 
-body.dark {
-  background: var(--blackColor);
-  color: var(--whiteColor);
-}
-body.dark .main .cardDiv {
-  background: var(--blackColor);
-  color: var(--whiteColor);
-}
-body.dark .main .cardDiv option {
-  background: var(--blackColor);
-  color: var(--whiteColor);
-}
-body.dark .main .cardDiv label {
-  color: var(--whiteColor);
-}
-
 .main {
   width: 100%;
   position: relative;
@@ -37,6 +22,20 @@ body.dark .main .cardDiv label {
   justify-content: center;
   margin: auto;
   color: var(--whiteColor);
+}
+.main select {
+  color: var(--whiteColor);
+  /* yazı rəngi */
+  border-radius: 6px;
+  padding: 8px 12px;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  /* bəzi brauzerlərdə standart oxu gizlətmək üçün */
+}
+.main select option {
+  color: var(--blackColor);
 }
 .main .overlay {
   position: absolute;
@@ -80,87 +79,11 @@ body.dark .main .cardDiv label {
   position: relative;
   font-size: 1.8rem;
 }
-.main .mainContent .cardDiv {
-  position: relative;
-  padding: 2rem 1rem;
-  border-radius: 10px;
-  background: var(--whiteColor);
-  gap: 0 1rem;
-}
-.main .mainContent .cardDiv label {
-  display: block;
-  color: var(--textColor);
-  padding-bottom: 10px;
-  font-size: 13px;
-  font-weight: 500;
-}
-.main .mainContent .cardDiv .label_total {
-  justify-content: space-between;
-  align-items: center;
-}
-.main .mainContent .cardDiv .label_total .total {
-  position: relative;
-  color: var(--textColor);
-  font-size: 18px;
-  bottom: 3px;
-}
-.main .mainContent .cardDiv .input {
-  height: 40px;
-  padding: 0 1rem;
-  background: var(--inputColor);
-  border-radius: 3rem;
-}
-.main .mainContent .cardDiv .input select {
-  width: 100%;
-  border: none;
-  background: var(--inputColor);
-}
-.main .mainContent .cardDiv .input input {
-  background: none;
-  border: none;
-  outline: none;
-  width: 100%;
-  font-size: 13px;
-  font-weight: 500;
-}
-.main .mainContent .cardDiv .input input::-moz-placeholder {
-  font-size: 13px;
-}
-.main .mainContent .cardDiv .input input::placeholder {
-  font-size: 13px;
-}
-.main .mainContent .cardDiv .input .icon {
-  font-size: 18px;
-  color: var(--blackColor) !important;
-  margin-left: 10px;
-}
-.main .mainContent .cardDiv .searchOptions {
-  position: absolute;
-  background: var(--gradientColor);
-  width: -moz-max-content;
-  width: max-content;
-  bottom: -0.7rem;
-  -moz-column-gap: 0.8rem;
-       column-gap: 0.8rem;
-  padding: 5px 1rem;
-  border-radius: 3rem;
-  left: 50%;
-  transform: translate(-50%);
-  justify-content: center;
-  cursor: pointer;
-}
-.main .mainContent .cardDiv .searchOptions:hover {
-  background: var(--PrimaryColor);
-}
-.main .mainContent .cardDiv .searchOptions .icon {
-  font-size: 18px;
-}
-.main .mainContent .cardDiv .searchOptions span {
-  font-size: 13px;
-}
 .main .mainContent .mainFooterIcons {
   width: 100%;
   justify-content: space-between;
+  position: relative;
+  bottom: -50px;
 }
 .main .mainContent .mainFooterIcons .icon {
   font-size: 25px;
@@ -169,6 +92,158 @@ body.dark .main .cardDiv label {
 }
 .main .mainContent .mainFooterIcons .icon:hover {
   color: var(--PrimaryColor);
+}
+
+.headerBtn {
+  background: var(--gradientColor);
+  color: var(--whiteColor);
+  font-weight: 500;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.headerBtn:hover {
+  background: var(--PrimaryColor);
+}
+
+.headerSearch {
+  width: 100%;
+  border: 3px solid var(--PrimaryColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  border-radius: 5px;
+  gap: 0px;
+  left: 0;
+}
+.headerSearch input {
+  color: var(--whiteColor);
+}
+
+.headerIcon {
+  color: var(--inputColor);
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.headerSearchInput::-moz-placeholder {
+  color: var(--inputColor);
+}
+.headerSearchInput::placeholder {
+  color: var(--inputColor);
+}
+
+.headerSearchText {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.date {
+  position: absolute;
+  top: 58px;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 58px;
+  background: var(--whiteColor);
+  color: var(--blackColor);
+  border-radius: 5px;
+  -wepkid-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background: white;
+}
+
+@media screen and (max-width: 480px) {
+  .headerSearch {
+    position: relative;
+    padding: 5px;
+    width: 100%;
+  }
+  .headerBtn {
+    position: absolute;
+    bottom: -33px;
+    left: 45%;
+  }
+  .headerIcon {
+    display: none;
+  }
+  .rdrDateDisplayWrapper {
+    width: 220px !important;
+  }
+  .rdrMonthAndYearPickers {
+    width: 10px;
+  }
+  .rdrMonths {
+    width: 100px;
+  }
+  .rdrMonth {
+    font-size: 10px;
+  }
+  .rdrWeekDays {
+    font-size: 10px;
+    width: 200px;
+  }
+  .rdrDays {
+    width: 200px;
+  }
+  .rdrNextPrevButton,
+  .rdrNextButton {
+    width: 100px;
+  }
+  .headerSearchInput {
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0;
+    margin: 0;
+  }
+}
+.options > * {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
 }
 
 @media screen and (min-width: 500px) {
@@ -228,4 +303,4 @@ body.dark .main .cardDiv label {
   .main .mainContent .cardDiv .searchOptions span {
     font-size: 17px;
   }
-}
+}/*# sourceMappingURL=Main.css.map */

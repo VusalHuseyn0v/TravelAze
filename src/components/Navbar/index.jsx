@@ -69,6 +69,11 @@ const Navbar = ({ scrollToTop }) => {
                             </NavLink>
                         </li>
                         <li className='navItem'>
+                            <NavLink className='navLink' to="/hotels" onClick={removeNavbar}>
+                                {i18n.t('hotels')}
+                            </NavLink>
+                        </li>
+                        <li className='navItem'>
                             <button onClick={() => { toggleTheme(); removeNavbar(); }} className="theme-toggle-btn">
                                 {theme === 'light' ? <MdDarkMode /> : <MdOutlineLightMode />}
                             </button>

@@ -1,0 +1,10 @@
+{
+  "hotelNotFound": "Hotel not found.",
+  "bookFreeTaxi": "Book a stay over ${{price}} at this property and get a free airport taxi",
+  "stayInCity": "Stay in the heart of City",
+  "perfectStay": "Perfect for a {{nights}}-night stay!",
+  "excellentLocation": "Located in the real heart of {{region}}, this property has an excellent location score of 9.8!",
+  "reserve": "Reserve or Book Now!",
+  "nightsTotal": "({{count}} nights)",
+  "distance": "Located {{value}} from the city center"
+}

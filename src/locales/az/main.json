@@ -1,10 +1,22 @@
 {
-  "ourPackages": "Turlarımız",
-  "searchHoliday": "Tətillərinizi Axtarın",
-  "searchDestination": "İstiqamətinizi seçin:",
-  "selectCity": "Şəhəri seçin",
-  "checkIn": "Giriş tarixi",
-  "checkOut": "Çıxış tarixi",
-  "searchBtn": "AXTAR",
-  "selectDestinationAlert": "Zəhmət olmasa istiqamət seçin"
+  "selectLocation": "Rayon seçin",
+  "search": "Axtar",
+  "ourPackages": "Tur paketlərimiz",
+  "searchHoliday": "Tətilinizi Axtarın",
+  "regions": {
+    "Qax": "Qax",
+    "Şəki": "Şəki",
+    "Zaqatala": "Zaqatala",
+    "Qəbələ": "Qəbələ",
+    "Qusar": "Qusar",
+    "Quba": "Quba",
+    "Lənkəran": "Lənkəran",
+    "İsmayıllı": "İsmayıllı",
+    "Lerik": "Lerik"
+  },
+  "options": {
+    "adult": "Böyüklər",
+    "children": "Uşaqlar",
+    "room": "Otaq"
+  }
 }

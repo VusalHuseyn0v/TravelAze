@@ -30,7 +30,7 @@ const Cards = () => {
             title: t('destinations.qax.title'),
             location: t('destinations.qax.location'),
             grade: t('destinations.qax.grade'),
-            fees: '$170',
+            fees: '$80',
             description: t('destinations.qax.description')
         },
         {
@@ -39,7 +39,7 @@ const Cards = () => {
             title: t('destinations.sheki.title'),
             location: t('destinations.sheki.location'),
             grade: t('destinations.sheki.grade'),
-            fees: '$170',
+            fees: '$80',
             description: t('destinations.sheki.description')
         },
         {
@@ -48,7 +48,7 @@ const Cards = () => {
             title: t('destinations.zaqatala.title'),
             location: t('destinations.zaqatala.location'),
             grade: t('destinations.zaqatala.grade'),
-            fees: '$170',
+            fees: '$90',
             description: t('destinations.zaqatala.description')
         },
         {
@@ -57,7 +57,7 @@ const Cards = () => {
             title: t('destinations.qusar.title'),
             location: t('destinations.qusar.location'),
             grade: t('destinations.qusar.grade'),
-            fees: '$150',
+            fees: '$80',
             description: t('destinations.qusar.description')
         },
         {
@@ -66,7 +66,7 @@ const Cards = () => {
             title: t('destinations.quba.title'),
             location: t('destinations.quba.location'),
             grade: t('destinations.quba.grade'),
-            fees: '$150',
+            fees: '$100',
             description: t('destinations.quba.description')
         },
         {
@@ -75,7 +75,7 @@ const Cards = () => {
             title: t('destinations.ismayilli.title'),
             location: t('destinations.ismayilli.location'),
             grade: t('destinations.ismayilli.grade'),
-            fees: '$150',
+            fees: '$100',
             description: t('destinations.ismayilli.description')
         },
         {
@@ -84,7 +84,7 @@ const Cards = () => {
             title: t('destinations.qebele.title'),
             location: t('destinations.qebele.location'),
             grade: t('destinations.qebele.grade'),
-            fees: '$150',
+            fees: '$120',
             description: t('destinations.qebele.description')
         },
         {
@@ -93,7 +93,7 @@ const Cards = () => {
             title: t('destinations.lenkeran.title'),
             location: t('destinations.lenkeran.location'),
             grade: t('destinations.lenkeran.grade'),
-            fees: '$120',
+            fees: '$80',
             description: t('destinations.lenkeran.description')
         },
         {
@@ -102,7 +102,7 @@ const Cards = () => {
             title: t('destinations.lerik.title'),
             location: t('destinations.lerik.location'),
             grade: t('destinations.lerik.grade'),
-            fees: '$120',
+            fees: '$80',
             description: t('destinations.lerik.description')
         }
     ];

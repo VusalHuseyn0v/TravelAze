@@ -13,28 +13,6 @@
     --cardBG: rgb(235, 235, 235);
 }
 
-body.dark {
-    background: var(--blackColor);
-    color: var(--whiteColor);
-
-    .main {
-        .cardDiv {
-            background: var(--blackColor);
-            color: var(--whiteColor);
-
-            option {
-                background: var(--blackColor);
-                color: var(--whiteColor);
-
-            }
-
-            label {
-                color: var(--whiteColor);
-            }
-        }
-    }
-}
-
 .main {
     width: 100%;
     position: relative;
@@ -43,8 +21,22 @@ body.dark {
     justify-content: center;
     margin: auto;
     color: var(--whiteColor);
+
     // background-image: url("https://images.pexels.com/photos/2049422/pexels-photo-2049422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     // background-size: cover;
+    select {
+        color: var(--whiteColor);
+        /* yazı rəngi */
+        border-radius: 6px;
+        padding: 8px 12px;
+        border: none;
+        appearance: none;
+
+        /* bəzi brauzerlərdə standart oxu gizlətmək üçün */
+        option {
+            color: var(--blackColor);
+        }
+    }
 
     .overlay {
         position: absolute;
@@ -91,96 +83,14 @@ body.dark {
             }
         }
 
-        .cardDiv {
-            position: relative;
-            padding: 2rem 1rem;
-            border-radius: 10px;
-            background: var(--whiteColor);
-            gap: 0 1rem;
-
-            label {
-                display: block;
-                color: var(--textColor);
-                padding-bottom: 10px;
-                font-size: 13px;
-                font-weight: 500;
-            }
-
-            .label_total {
-                justify-content: space-between;
-                align-items: center;
-
-                .total {
-                    position: relative;
-                    color: var(--textColor);
-                    font-size: 18px;
-                    bottom: 3px;
-                }
-            }
-
-            .input {
-                height: 40px;
-                padding: 0 1rem;
-                background: var(--inputColor);
-                border-radius: 3rem;
-
-                select {
-                    width: 100%;
-                    border: none;
-                    background: var(--inputColor);
-                }
-
-                input {
-                    background: none;
-                    border: none;
-                    outline: none;
-                    width: 100%;
-                    font-size: 13px;
-                    font-weight: 500;
-
-                    &::placeholder {
-                        font-size: 13px;
-                    }
-                }
-
-                .icon {
-                    font-size: 18px;
-                    color: var(--blackColor) !important;
-                    margin-left: 10px;
-                }
-            }
-
-            .searchOptions {
-                position: absolute;
-                background: var(--gradientColor);
-                width: max-content;
-                bottom: -0.7rem;
-                column-gap: .8rem;
-                padding: 5px 1rem;
-                border-radius: 3rem;
-                left: 50%;
-                transform: translate(-50%);
-                justify-content: center;
-                cursor: pointer;
 
 
-                &:hover {
-                    background: var(--PrimaryColor);
-                }
-
-                .icon {
-                    font-size: 18px;
-                }
-
-                span {
-                    font-size: 13px;
-                }
-            }
-        }
 
         .mainFooterIcons {
             width: 100%;
             justify-content: space-between;
+            position: relative;
+            bottom: -50px;
 
             .icon {
                 font-size: 25px;
@@ -193,7 +103,182 @@ body.dark {
             }
         }
     }
+
+
 }
+
+.headerBtn {
+    background: var(--gradientColor);
+    color: var(--whiteColor);
+    font-weight: 500;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        background: var(--PrimaryColor);
+    }
+}
+
+.headerSearch {
+    width: 100%;
+    border: 3px solid var(--PrimaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    border-radius: 5px;
+    gap: 0px;
+    left: 0;
+
+    input {
+        color: var(--whiteColor);
+    }
+}
+
+.headerIcon {
+    color: var(--inputColor);
+}
+
+.headerSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.headerSearchInput {
+    border: none;
+    outline: none;
+    background: transparent;
+
+    &::placeholder {
+        color: var(--inputColor);
+    }
+}
+
+.headerSearchText {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.date {
+    position: absolute;
+    top: 58px;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.options {
+    z-index: 2;
+    position: absolute;
+    top: 58px;
+    background: var(--whiteColor);
+    color: var(--blackColor);
+    border-radius: 5px;
+    -wepkid-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+
+}
+
+.optionItem {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+.optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.optionCounterButton:disabled {
+    cursor: not-allowed;
+}
+
+.optionCounterButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background: white;
+
+
+}
+
+@media screen and (max-width:480px) {
+    .headerSearch {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .headerBtn {
+        position: absolute;
+        bottom: -33px;
+        left: 45%;
+    }
+
+    .headerIcon {
+        display: none;
+    }
+
+    .rdrDateDisplayWrapper {
+        width: 220px !important;
+    }
+
+
+    .rdrMonthAndYearPickers {
+        width: 10px;
+
+    }
+
+    .rdrMonths {
+        width: 100px;
+    }
+
+    .rdrMonth {
+        font-size: 10px;
+    }
+
+    .rdrWeekDays {
+        font-size: 10px;
+        width: 200px;
+    }
+
+    .rdrDays {
+        width: 200px;
+    }
+
+    .rdrNextPrevButton,
+    .rdrNextButton {
+        width: 100px;
+    }
+
+    .headerSearchInput {
+        width: max-content;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+.options>* {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+
+
+
 
 @media screen and (min-width: 500px) {
     .main {

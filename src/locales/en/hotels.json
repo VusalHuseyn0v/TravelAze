@@ -1,0 +1,10 @@
+{
+  "search": {
+    "title": "Search",
+    "hotelNameLabel": "Hotel name",
+    "minPriceLabel": "Min price (AZN)",
+    "maxPriceLabel": "Max price (AZN)",
+    "noResults": "No matching hotel found.",
+    "ratingText": "Rating"
+  }
+}

@@ -15,7 +15,9 @@ import Seki from './Pages/Cities/Seki'
 import Zaqatala from './Pages/Cities/Zaqatala'
 import DestinationDetails from './components/DestinationDetails';
 import NoPage from './Pages/NoPage';
+import Hotels from './Pages/Hotels/Hotels'
 import './App.css';
+import Hotel from './Pages/hotel/Hotel';
 
 function App() {
   const homeRef = useRef(null);
@@ -35,6 +37,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/hotels" element={<Hotels />} />
+          <Route path="/hotel/:region/:hotelName" element={<Hotel />} />
           <Route path="/destination/:id" element={<DestinationDetails />} />
           <Route path='/destination/1' element={<Qax />} />
           <Route path='/destination/2' element={<Seki />} />

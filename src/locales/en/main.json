@@ -1,10 +1,22 @@
 {
-  "ourPackages": "Our Packages",
+  "selectLocation": "Select region",
+  "search": "Search",
+  "ourPackages": "Our packages",
   "searchHoliday": "Search your Holiday",
-  "searchDestination": "Search Your destination:",
-  "selectCity": "Select a city",
-  "checkIn": "Check-in date",
-  "checkOut": "Check-out date",
-  "searchBtn": "SEARCH",
-  "selectDestinationAlert": "Please select a destination"
+  "regions": {
+    "Qax": "Qakh",
+    "Şəki": "Shaki",
+    "Zaqatala": "Zagatala",
+    "Qəbələ": "Gabala",
+    "Qusar": "Gusar",
+    "Quba": "Guba",
+    "Lənkəran": "Lankaran",
+    "İsmayıllı": "Ismayilli",
+    "Lerik": "Lerik"
+  },
+  "options": {
+    "adult": "Adults",
+    "children": "Children",
+    "room": "Room"
+  }
 }

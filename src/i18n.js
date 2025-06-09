@@ -18,6 +18,9 @@ import qubaAZ from './locales/az/quba.json'
 import qusarAZ from './locales/az/qusar.json'
 import sekiAZ from './locales/az/seki.json'
 import zaqatalaAZ from './locales/az/zaqatala.json'
+import hotelsAZ from './locales/az/hotels.json'
+import searchItemAZ from './locales/az/searchItem.json'
+import hotelAZ from './locales/az/hotel.json'
 
 // RU
 import navbarRU from './locales/ru/navbar.json';
@@ -35,6 +38,9 @@ import qubaRU from './locales/ru/quba.json'
 import qusarRU from './locales/ru/qusar.json'
 import sekiRU from './locales/ru/seki.json'
 import zaqatalaRU from './locales/ru/zaqatala.json'
+import hotelsRU from './locales/ru/hotels.json'
+import searchItemRU from './locales/ru/searchItem.json'
+import hotelRU from './locales/ru/hotel.json'
 
 // EN
 import navbarEN from './locales/en/navbar.json';
@@ -52,6 +58,9 @@ import qubaEN from './locales/en/quba.json'
 import qusarEN from './locales/en/qusar.json'
 import sekiEN from './locales/en/seki.json'
 import zaqatalaEN from './locales/en/zaqatala.json'
+import hotelsEN from './locales/en/hotels.json'
+import searchItemEN from './locales/en/searchItem.json'
+import hotelEN from './locales/en/hotel.json'
 
 i18n
   .use(LanguageDetector)
@@ -74,6 +83,9 @@ i18n
         qusar: qusarAZ,
         seki: sekiAZ,
         zaqatala: zaqatalaAZ,
+        hotels: hotelsAZ,
+        searchItem: searchItemAZ,
+        hotel: hotelAZ,
       },
 
       ru: {
@@ -92,6 +104,9 @@ i18n
         qusar: qusarRU,
         seki: sekiRU,
         zaqatala: zaqatalaRU,
+        hotels: hotelsRU,
+        searchItem: searchItemRU,
+        hotel: hotelRU,
       },
 
       en: {
@@ -110,10 +125,13 @@ i18n
         qusar: qusarEN,
         seki: sekiEN,
         zaqatala: zaqatalaEN,
+        hotels: hotelsEN,
+        searchItem: searchItemEN,
+        hotel: hotelEN,
       }
     },
     fallbackLng: 'az',
-    ns: ['navbar', 'main', 'cards', 'footer', 'about', 'contact', 'ismayilli', 'lenkeran', 'lerik', 'qax', 'qebele', 'quba', 'qusar', 'seki', 'zaqatala'],
+    ns: ['navbar', 'main', 'cards', 'footer', 'about', 'contact', 'hotels', 'hotel', 'searchItem', 'ismayilli', 'lenkeran', 'lerik', 'qax', 'qebele', 'quba', 'qusar', 'seki', 'zaqatala'],
     defaultNS: 'navbar',
     interpolation: {
       escapeValue: false,

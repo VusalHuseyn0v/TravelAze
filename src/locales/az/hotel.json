@@ -1,0 +1,10 @@
+{
+  "hotelNotFound": "Otel tapılmadı.",
+  "bookFreeTaxi": "Bu mülkiyyətdə gecəlik ${{price}} üzərində rezervasiya edin və hava limanı transferi pulsuz əldə edin",
+  "stayInCity": "Şəhərin mərkəzində qalın",
+  "perfectStay": "{{nights}} gecəlik qalmaq üçün ideal seçim!",
+  "excellentLocation": "{{region}} şəhərinin tam mərkəzində yerləşir, əla məkan reytinqi: 9.8!",
+  "reserve": "İndi rezerv et!",
+  "nightsTotal": "({{count}} gecə)",
+  "distance": "{{value}} şəhər mərkəzindən məsafədə yerləşir"
+}

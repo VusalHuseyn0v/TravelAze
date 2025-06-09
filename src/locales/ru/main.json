@@ -1,10 +1,22 @@
 {
-  "ourPackages": "Наши туры",
-  "searchHoliday": "Найдите свой Отпуск",
-  "searchDestination": "Выберите направление:",
-  "selectCity": "Выберите город",
-  "checkIn": "Дата заезда",
-  "checkOut": "Дата выезда",
-  "searchBtn": "ИСКАТЬ",
-  "selectDestinationAlert": "Пожалуйста, выберите направление"
+  "selectLocation": "Выберите регион",
+  "search": "Поиск",
+  "ourPackages": "Наши турпакеты",
+  "searchHoliday": "Поиск вашего Отпуска",
+  "regions": {
+    "Qax": "Ках",
+    "Şəki": "Шеки",
+    "Zaqatala": "Закатала",
+    "Qəbələ": "Габала",
+    "Qusar": "Гусар",
+    "Quba": "Куба",
+    "Lənkəran": "Ленкорань",
+    "İsmayıllı": "Исмаиллы",
+    "Lerik": "Лерик"
+  },
+  "options": {
+    "adult": "Взрослые",
+    "children": "Дети",
+    "room": "Комната"
+  }
 }

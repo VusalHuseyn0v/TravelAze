@@ -34,7 +34,7 @@ body.dark {
     height: 100vh;
 
     h1 {
-      font-size: 130px;
+      font-size: 100px;
       color: red;
     }
 
@@ -42,5 +42,15 @@ body.dark {
       color: var(--blackColor);
       font-size: 30px;
     }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  h2 {
+    color: var(--blackColor);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }

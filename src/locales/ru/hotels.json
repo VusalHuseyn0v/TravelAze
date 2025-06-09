@@ -1,0 +1,10 @@
+{
+  "search": {
+    "title": "Поиск",
+    "hotelNameLabel": "Название отеля",
+    "minPriceLabel": "Минимальная цена (AZN)",
+    "maxPriceLabel": "Максимальная цена (AZN)",
+    "noResults": "Подходящий отель не найден.",
+    "ratingText": "Рейтинг"
+  }
+}

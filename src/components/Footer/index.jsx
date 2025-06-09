@@ -59,7 +59,7 @@ const Footer = () => {
 
               <li className='footerList flex'><FiChevronRight className='icon' />{t('bookings')}</li>
               <li className='footerList flex'><FiChevronRight className='icon' />{t('rentcars')}</li>
-              <li className='footerList flex'><FiChevronRight className='icon' />{t('hotels')}</li>
+              <li className='footerList flex'><FiChevronRight className='icon' /><Link to="/hotels">{t('hotels')}</Link></li>
               <li className='footerList flex'><FiChevronRight className='icon' />{t('trivago')}</li>
               <li className='footerList flex'><FiChevronRight className='icon' />{t('tripAdvisor')}</li>
             </div>
